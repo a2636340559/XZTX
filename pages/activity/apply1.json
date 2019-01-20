@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#93C47D",
+  "navigationBarTitleText": "帮人报名",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "panel": "/dist/panel/index",
+    "i-button": "../../dist/button/index"
+  }
+}

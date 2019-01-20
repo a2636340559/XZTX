@@ -1,0 +1,19 @@
+<view  class="page"> 
+<form bindsubmit='formSubmit' bindreset='formReset'>
+<view class="border">
+<input  name="name" placeholder='姓名' placeholder-class="holder" type='text' selection-start='2' auto-focus='true'  ></input></view>
+<view class="border"><input name="gender" placeholder='性别'placeholder-class="holder" type='text'  ></input></view>
+<view class="border"><input  name="department" placeholder='xx学院xx班' placeholder-class="holder" type='text'></input></view>
+<view class="border"><input name="studentNum" placeholder='学号' placeholder-class="holder"type='text' maxlength="15"  ></input></view>
+<view class="border"><input  name="volunteerNum" placeholder='志愿者号(若无可不填）'placeholder-class="holder" type='text'  ></input></view>
+<view class="border">
+<input bindblur="bindblur"  name="phoneNum" placeholder='电话号码'placeholder-class="holder" type='text' auto-height='true' maxlength='11' confirm-type="done"></input>
+</view>
+<view class="buttonStyle">
+<button  class="loginBtn" disabled='{{disabled}}'hover-class="hover" form-type='submit' >完成</button>
+</view>
+<view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 计算机志愿者协会</view>
+        </view>
+</form>
+</view>

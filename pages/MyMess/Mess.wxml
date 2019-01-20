@@ -1,0 +1,70 @@
+<!--pages/man-hour/searchCredit.wxml-->
+ <view  class="page"> 
+ <view class="i-swipeout-demo-des">
+        tip: 修改学号请联系志协管理人员(微信号:zhaoyu2583)
+    </view>
+ <form bindsubmit='formSubmit'>
+<view class="border">
+  <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+<view>
+<input class="inputborderstyle" name="name" disabled='{{flag}}' value='{{MyMess.name}}'placeholder-class="holder" type='text' confirm-type="done" >
+</input>
+</view>
+</view>
+</view>
+<view class="border">
+ <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">性别</view>
+                </view>
+<view><input class="inputborderstyle" disabled='{{flag}}' name="gender" value='{{MyMess.sex}}'placeholder-class="holder" type='text' confirm-type="done" ></input>
+</view>
+</view>
+</view>
+<view class="border">
+ <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">学院班级</view>
+                </view>
+<view><input  class="inputborderstyle" disabled='{{flag}}' name="department" value='{{MyMess.cclass}}' placeholder-class="holder" type='text' confirm-type="done"></input>
+</view>
+</view>
+</view>
+<view class="border">
+ <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">学号</view>
+                </view>
+<view><input  class="inputborderstyle" name="studentNum" value='{{MyMess.no}}' placeholder-class="holder"type='text' disabled='{{true}}'  maxlength="15" confirm-type="done" ></input>
+</view>
+</view>
+</view>
+<view class="border">
+ <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">志愿者号</view>
+                </view>
+<view><input  class="inputborderstyle" name="volunteerNum" value='{{MyMess.vno}}'placeholder-class="holder"  disabled='{{flag}}'  type='text'  confirm-type="done" ></input>
+</view>
+</view>
+</view>
+<view class="border">
+ <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">电话号码</view>
+                </view>
+<view><input class="inputborderstyle" disabled='{{flag}}'  name="phoneNum" value='{{MyMess.phone}}'placeholder-class="holder" type='text' auto-height='true' auto-focus='true' ></input>
+</view>
+</view>
+</view>
+<view class="buttonStyle">
+<button  class="loginBtn"  hover-class="hover" formType='submit' >{{mess}}</button>
+</view>
+</form>
+<view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 计算机志愿者协会</view>
+        </view>
+</view>

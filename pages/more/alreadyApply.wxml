@@ -1,0 +1,37 @@
+<!--pages/more/alreadyApply.wxml-->
+<view class="i-swipeout-demo-title">已报名活动</view>
+<view class="i-swipeout-demo-des">
+        tip: 1、向左滑可动选择取消报名
+    </view>
+    <i-action-sheet visible="{{ visible2 }}" actions="{{ actions2 }}" show-cancel bind:cancel="handleCancel2" bind:click="handleClickItem2" mask-closable="{{ false }}">
+        <view slot="header" style="padding: 16px">
+            <view style="color: #444;font-size: 16px">确定吗？</view>
+            <text>取消后无法恢复哦</text>
+        </view>
+    </i-action-sheet>
+    <view wx:if="{{apply==''}}" style="text-align:center;font-size:20px;padding:70px">
+      <text>当前暂无报名活动！</text>
+    </view>
+    <block wx:else>
+    <view style="padding:5px" wx:for="{{apply}}" wx:for-item="item" wx:key='i'>
+    <view vid='i'>
+    <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{120}}"  unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+            <view class="i-swipeout-image">
+                <i-icon size="20" color="#FFFFFF" type="flag"></i-icon>
+           </view>
+           <view class="i-swipeout-des">
+                <view class="i-swipeout-des-h2">{{item.aname}}</view>
+                <view class="i-swipeout-des-detail">
+                  <text>岗位： {{item.pk.ajobstate}} </text>
+                  <text>时间段： {{item.pk.atime}}</text>
+                </view>
+           </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+            <view class="i-swipeout-demo-button" style="width:120px" data-Ajobstate="{{item.pk.ajobstate}}" data-Aname="{{item.aname}}" data-Ano="{{item.pk.ano}}" data-Atime="{{item.pk.atime}}" bindtap="actionsTap"><i-icon  size="40" type="delete_fill"></i-icon></view>
+        </view>
+    </i-swipeout>
+    </view>
+  </view>
+  </block>

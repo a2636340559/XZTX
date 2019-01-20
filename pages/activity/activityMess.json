@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#93C47D",
+  "navigationBarTitleText": "活动信息",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-panel": "../../dist/panel/index",
+    "i-count-down": "../../dist/count-down/index"
+  }
+}

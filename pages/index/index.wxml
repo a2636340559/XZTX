@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="buttonStyle">
+    <button class="loginBtn" hover-class="hover" bindtap="login">注册</button>
+</view>
+<view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 携志同行志愿平台</view>
+        </view>
+</view>

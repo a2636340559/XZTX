@@ -1,0 +1,41 @@
+/**index.wxss**/
+.userinfo 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container
+{
+  background:#F0F0F0;
+}
+.userinfo-avatar {
+  width: 110px;
+  height: 110px;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto
+ {
+  margin-top: 50px;
+}
+.buttonStyle
+{
+margin:50px auto;
+width: 90%;
+}
+.loginBtn
+{
+  background-color:#93C47D;
+  color: black;
+}
+.hover
+{
+  background-color: red;
+}
+navigator{margin-left:130px;margin-top:10px;font-size:18px}

@@ -1,0 +1,74 @@
+/* pages/history/history.wxss */
+.content
+{
+  background-color: #F0F0F0
+}
+/* pages/index/yangba.wxss */
+.inputStyle
+{
+  width: 70%;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+}
+.icon
+{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-left:5%;
+}
+.top
+{
+  display: flew;
+  flex-direction: column;
+  height: 40px;
+  justify-content: space-around;
+  background-color: #93C47D;
+
+}
+.img
+{
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: row;
+}
+.messbottom
+{
+  font-size: 12px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+}
+.mess
+{
+  background-color: #F0F0F0;
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 1px #cccccc;
+  margin: 8px 0;
+  position: relative;
+}
+.content
+{
+  background-color: #F0F0F0
+}
+image
+{
+  width: 100px;
+  height: 80px;
+  margin-right: 20px;
+  margin-left:5%;
+}
+.border
+{
+  display:flex;
+  flex-direction: row;
+  border-style: hidden;
+ width: 100%;
+ align-items: center;
+  line-height:40px;
+}

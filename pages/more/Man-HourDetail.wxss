@@ -1,0 +1,37 @@
+/* pages/more/Man-HourDetail.wxss */
+
+.caption-wrap{
+  margin-bottom: 30px;
+}
+
+.caption-title{
+  font-weight: bold;
+  padding:20px 10px;
+}
+
+.collapse-item-title{
+  font-size: 12px;
+  color: #737373;
+  font-weight: bold;
+}
+
+.collapse-item-content{
+  font-size: 14px;
+  color: #444444;
+}
+
+.act__title
+{
+  
+  font-size:25px;
+  text-align: center;
+ padding-top:10px;
+  padding-bottom:5px;
+}
+text
+{
+  margin-left:40px;
+  font-size:16px;
+  margin-top:5px;
+  margin-bottom:5px;
+}

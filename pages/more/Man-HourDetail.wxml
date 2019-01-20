@@ -1,0 +1,26 @@
+<!--pages/more/Man-HourDetail.wxml-->
+
+<view>
+<view wx:if="{{detailHour==''}}" style="padding:40px">
+  <text style="font-size:20px">您还没有做过志愿活动或工时信息尚未录入。</text>
+</view>
+<block wx:else>
+ <view class="act__title">总工时：{{detailHour.allvtime}}</view>
+ <view style="padding:15px" wx:for="{{detailHour.manhour}}" wx:for-item="item" wx:key='i'>
+    <view vid='i'>
+        <i-collapse-item title="{{item.pk.aname}}" name="name1">
+            <view slot="content">
+                <view style="display:flex;flex-direction:column">
+                  <text>活动时间:{{item.pk.adate}}</text>
+                  <text>活动工时数:{{item.avtime}}</text>
+                </view>
+            </view>
+        </i-collapse-item>
+    </view>
+  </view>
+  <view style="margin-top:600px" class="weui-footer">
+            <view class="weui-footer__text">Copyright © 计算机志愿者协会</view>
+        </view>
+        </block>
+</view>
+

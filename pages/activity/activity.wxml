@@ -1,0 +1,22 @@
+<!--pages/activity/activity.wxml-->
+<view class="content">
+<scroll-view scroll-y="true" style='height:{{height}}px' bindscrolltolower="refresh">
+<view wx:if="{{mess.data==''}}" style="text-align:center;padding:20%;font-size:30px;">暂无招募中的活动</view>
+<block wx:else>
+<view class='mess' wx:for="{{mess.data}}" wx:for-item="item" wx:key='i'>
+<block wx:if="{{item.Astate!='报名截止'}}">
+<view class='img'vid='i' data-deadline='{{item.Adeadline}}' data-name='{{item.Aname}}' data-ano='{{item.Ano}}' data-index='{{index}}' bindtap='view' >
+<view><image src="{{item.picture}}"></image></view>
+<view><text>{{item.Adate}}-{{item.Aname}}</text></view>
+</view>
+<view class="messbottom"style='background-color:#F0F0F0;'>
+<view style='justify-content:right;margin-left:130px'>
+<text style='text-align:left'>{{item.publishTime}}</text>        
+<text style='text-align:right;margin-left:20px'>计算机志协</text></view>
+</view>
+</block>
+</view>
+</block>
+</scroll-view>
+</view>
+

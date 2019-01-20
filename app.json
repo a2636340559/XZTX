@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/activity/activity",
+    "pages/history/history",
+    "pages/activity/apply",
+    "pages/MyMess/Mess",
+    "pages/index/regist",
+    "pages/activity/activityMess",
+    "pages/activity/apply1",
+    "pages/more/Man-HourDetail",
+    "pages/more/alreadyApply",
+    "pages/more/More"
+  ],
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#fff",
+    "selectedColor": "#000000",
+    "backgroundColor": "#93C47D",
+    "list": [
+      {
+        "iconPath": "images/activity.png",
+        "selectedIconPath": "images/activity.png",
+        "text": "活动招募",
+        "pagePath": "pages/activity/activity"
+      },
+      {
+        "iconPath": "images/history.png",
+        "selectedIconPath": "images/history.png",
+        "text": "历史信息",
+        "pagePath": "pages/history/history"
+      },
+      {
+        "iconPath": "images/man-hour.png",
+        "selectedIconPath": "images/man-hour.png",
+        "text": "更多",
+        "pagePath": "pages/more/More"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#93C47D",
+    "navigationBarTitleText": "携志同行",
+    "enablePullDownRefresh":true,
+    "navigationBarTextStyle": "black"
+  }
+}

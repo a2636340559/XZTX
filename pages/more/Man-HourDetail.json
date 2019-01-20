@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#93C47D",
+  "navigationBarTitleText": "工时详情",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "i-collapse": "../../dist/collapse/index",
+    "i-panel": "../../dist/panel/index",
+    "i-collapse-item": "../../dist/collapse-item/index"
+  }
+}

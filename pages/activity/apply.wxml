@@ -1,0 +1,16 @@
+<!--pages/activity/apply.wxml-->
+<view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%;background-color:gray;height: 300px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{Atime}}" wx:key="i" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{Ajobstate}}" wx:key="i" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <view style="text-align:center;font-size:20px;font-weight:bold;padding-top:50px;padding-bottom:10px">{{atime}}-{{ajobstate}}</view>
+  <view style="text-align:center;font-size:15px;font-weight:bold;padding-bottom:5px">剩：{{applynum}}人</view>
+  <form report-submit='true' bindsubmit='completeApply' >
+  <button form-type='submit' class="i-btn i-btn-success i-btn-square" hover-class="i-btn-hover" >确认</button>
+  </form>
+</view>

@@ -1,0 +1,40 @@
+/* pages/activity/activityMess.wxss */
+.view-wrap{
+  padding: 20px 90px;
+}
+.big{
+  font-size: 20px;
+  color: #3399FF;
+  font-weight: bold;
+}
+
+view
+{
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.act__title
+{
+  font-family: YaHei;
+  font-size:25px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom:30px;
+}
+title
+{
+  font-family: YaHei;
+  color: red;
+  font-size:20px;
+}
+.type-title{
+  padding: 10px 0;
+}
+
+.big{
+  font-size: 20px;
+  color: #3399FF;
+  font-weight: bold;
+}

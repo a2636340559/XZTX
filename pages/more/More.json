@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#93C47D",
+  "navigationBarTitleText":"更多",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+  "i-cell": "../../dist/cell/index",
+  "i-icon": "../../dist/icon/index"
+  }
+}

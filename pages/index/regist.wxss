@@ -1,0 +1,50 @@
+/* pages/index/regist.wxss */
+.content
+{
+  margin-top: 10px;
+  background-color: #f2f2f2;
+  height:1000px
+}
+input
+{
+  overflow:visible;
+  display:block;
+  font-size:20px;
+  margin-top:10px;
+}
+.holder
+{
+  font-size: 20px;
+  color: #999999;
+  margin-left:20px;
+}
+.border
+{
+  border: 1px,solid,#cccccc;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius:5px;
+  display:flex;
+  flex-direction: row;
+  height: 50px;
+   margin-bottom: 10px;
+    margin-top: 10px;
+}
+.buttonStyle
+{
+margin-top: 40px;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom:30px;
+}
+.loginBtn
+{
+  background-color:#93C47D;
+  color: white;
+  margin-bottom: 10px;
+}
+.hover
+{
+  background-color: red;
+}
